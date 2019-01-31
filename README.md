@@ -3,19 +3,23 @@ This repo creates a simple environment for exploring regl layouts for large amou
 
 ### Customization
 Various parameters are provided for easy updating:  
--  # of points  
--  width of points  
--  transition duration 
+* # of points  
+* width of points  
+* transition duration 
 
 ### How was it built?
 I used a D3 boilerplate (see more below).
 
-# D3 boilerplate 
-This project has been adapted from Willam Soares' webpack-babel setup   which you can find below under the next main heading.
+### Example Layouts
+![screen shot 2019-01-30 at 8 17 02 pm](https://user-images.githubusercontent.com/31457853/52025995-0fe36580-24cc-11e9-9b95-feb2e70f5bac.png)  
+![screen shot 2019-01-30 at 8 16 48 pm](https://user-images.githubusercontent.com/31457853/52025997-0fe36580-24cc-11e9-9815-a43bb8403c55.png)
+
 
 ***
+# D3 boilerplate 
+This project has been adapted from Willam Soares' webpack-babel setup. I've simply optimized it for D3 and updated webpack and babel.
 
-# Willam Soares' Learning D3.js - The basics
+## Willam Soares' Learning D3.js - The basics
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/willamesoares)
 
 Although this repository was created for learning purposes, it can be easily used as a boilerplate for [D3.js](https://d3js.org/) projects.
