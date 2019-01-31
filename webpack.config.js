@@ -41,6 +41,7 @@ module.exports = {
     compress: true,
     port: '4800',
     stats: 'errors-only',
+    inline: true
   },
   plugins: [
     new ExtractTextPlugin({

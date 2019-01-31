@@ -7,8 +7,8 @@ const regl = require('regl')({
 // Main fires after regl is initialized at the bottom
 function main(err, regl) {
   // Set constants
-  const numPoints = 50000,
-        pointWidth = 2,
+  const numPoints = 500,
+        pointWidth = 20,
         width  = window.innerWidth,
         height = window.innerHeight,
         duration = 1500; // 1500ms = 1.5s  

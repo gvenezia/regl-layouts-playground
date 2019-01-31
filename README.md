@@ -9,9 +9,7 @@ Regl provides a middle ground between the simplicity and the performance of WebG
 ### What does it do?
 Animates points between various layouts.  
 
-The layouts are functions that modify the x and y positions of the points by using a combination of wave functions (sin, cos, etc.) and randomly generated numbers. Experiment with these parameters to change the layouts. Simply copy a layout with a new name to create a new layout.
-
-
+The layouts are functions that modify the x and y positions of the points by using a combination of wave functions (sin, cos, etc.) and randomly generated numbers. Experiment with these parameters to change the layouts. Simply copy a layout with a new name to create a new layout.  
 
 ### What's the use of creating arbitrary layouts with regl?  
 Isolate regl's capabilities and parameters makes it easier to learn. The next step could be to integrate regl with D3 and bind actual data to the points on the screen.
@@ -26,6 +24,9 @@ Some customization is more complicated bc it must be done within regl. For examp
 
 ### How was it built?
 I used a D3 boilerplate (see more below).
+
+### To Do
+* Update Babel and Webpack config (which should fix the hot module bug).  
 
 ### Example Layouts
 ![screen shot 2019-01-30 at 8 17 02 pm](https://user-images.githubusercontent.com/31457853/52025995-0fe36580-24cc-11e9-9b95-feb2e70f5bac.png)  
