@@ -1,11 +1,24 @@
 # Regl Playground
 This repo creates a simple environment for exploring regl layouts for large amount of data points.
 
+### Why Regl?
+Regl is a simplified version of WebGL. WebGL is a lower level visual language that directly utilizes graphics cards. While extremely performant compared to higher-level languages like D3, it is also a lot of heavy-lifting. 
+
+Regl provides a middle ground between the simplicity and the performance of WebGL
+
+### What does it do?
+Animates points between various layouts
+
+### What's the use of creating arbitrary layouts with regl?  
+Isolate regl's capabilities and parameters makes it easier to learn. The next step could be to integrate regl with D3 and bind actual data to the points on the screen.
+
 ### Customization
 Various parameters at the top of `app.js` are provided for easy experimentation:  
 * number of points  
 * width of points  
 * transition duration 
+
+Some customization is more complicated bc it must be done within regl. For example, the points on the screen are square by default (they correspond directly to pixels). However, I've also included a commented out portion that shows how to display circles with regl. (Please note that this extra logic takes a toll on performance. I'd recommend decreasing the number of poitns by 10x before implementing circles).
 
 ### How was it built?
 I used a D3 boilerplate (see more below).
