@@ -2,8 +2,8 @@
 This repo creates a simple environment for exploring regl layouts for large amount of data points.
 
 ### Customization
-Various parameters are provided for easy updating:  
-* # of points  
+Various parameters at the top of `app.js` are provided for easy experimentation:  
+* number of points  
 * width of points  
 * transition duration 
 
