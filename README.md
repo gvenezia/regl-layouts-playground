@@ -1,13 +1,15 @@
 # Regl Playground
-This repo creates a simple environment for exploring regl layouts for large amount of data points.
+This repo creates a simple environment for exploring regl layouts for a large amount of data points.
 
 ### Why Regl?
-[Regl](https://github.com/regl-project/regl) is a simplified version of [WebGL](https://www.khronos.org/webgl/wiki/Getting_Started). WebGL is a low-level DOM API that directly utilizes graphics cards. While extremely performant compared to higher-level languages like D3, it is also a lot of heavy-lifting. 
+D3 and similar visualization libraries can't handle that many visual elements on the screen. With a few thousand visual elements, D3 animation and interactivity slows down substantially. Regl can increases rendering performance at this point.
 
-Regl provides a middle ground between the simplicity and the performance of WebGL
+[Regl](https://github.com/regl-project/regl) is a simplified version of [WebGL](https://www.khronos.org/webgl/wiki/Getting_Started). WebGL is a low-level DOM API that directly utilizes graphics cards. While extremely performant compared to higher-level languages like D3, it is also requires a lot of heavy-lifting for relatively simple tasks. 
+
+Thus, regl provides a middle ground between the simplicity of D3 and the performance of WebGL.
 
 ### What does it do?
-Animates points between various layouts.  
+Animates points between various visual layouts.  
 
 The layouts are functions that modify the x and y positions of the points by using a combination of wave functions (sin, cos, etc.) and randomly generated numbers. Experiment with these parameters to change the layouts. Simply copy a layout with a new name to create a new layout.  
 
@@ -17,12 +19,12 @@ Isolate regl's capabilities and parameters makes it easier to learn. The next st
 ### Customization
 Various parameters at the top of `app.js` are provided for easy experimentation:  
 * number of points  
-* width of points  
+* size of points  
 * transition duration 
 
-Some customization is more complicated bc it must be done within regl. For example, the points on the screen are square by default (they correspond directly to pixels). However, I've also included a commented out portion that shows how to display circles with regl. (Please note that this extra logic takes a toll on performance. I'd recommend decreasing the number of poitns by 10x before implementing circles).
+Some customization is more complicated bc it must be done within regl. For example, the points on the screen are square by default (they correspond directly to pixels). However, in the `frag: ` portion of the regl code, I've included a commented out portion that shows how to display circles with regl. (Please note that this extra logic takes a toll on performance. I'd recommend decreasing the number of points by 10x-100x before implementing circles).
 
-### How was it built?
+### What's the project structure?
 I used a D3 boilerplate (see more below).
 
 ### To Do
