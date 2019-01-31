@@ -14,7 +14,7 @@ Animates points between various visual layouts.
 The layouts are functions that modify the x and y positions of the points by using a combination of wave functions (sin, cos, etc.) and randomly generated numbers. Experiment with these parameters to change the layouts. Simply copy a layout with a new name to create a new layout.  
 
 ### What's the use of creating arbitrary layouts with regl?  
-Isolate regl's capabilities and parameters makes it easier to learn. The next step could be to integrate regl with D3 and bind actual data to the points on the screen.
+Isolating regl's capabilities and parameters makes it easier to learn. The next step could be to integrate regl with D3 and bind actual data to the points on the screen.
 
 ### Customization
 Various parameters at the top of `app.js` are provided for easy experimentation:  
